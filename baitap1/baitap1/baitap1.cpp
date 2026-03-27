@@ -7,6 +7,6 @@ int main()
     NgayThangNam date;
     date.Nhap();
     date.Xuat();
-    date.NgayThangNamTiepTheo();
+    date.XuatNgayThangNamTiepTheo();
     return 0;
 }

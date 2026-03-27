@@ -7,5 +7,5 @@ private:
 public:
 	void Nhap();
 	void Xuat();
-	void NgayThangNamTiepTheo();
+	void XuatNgayThangNamTiepTheo();
 };
