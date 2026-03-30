@@ -6,6 +6,9 @@ private:
 public:
 	void Nhap();
 	void Xuat();
-	SoPhuc TinhTong(SoPhuc sp2);
+	SoPhuc TinhTong(const SoPhuc& sp2);
+	SoPhuc TinhHieu(const SoPhuc& sp2);
+	SoPhuc TinhTich(const SoPhuc& sp2);
+	SoPhuc TinhThuong(const SoPhuc& sp2);
 };
 

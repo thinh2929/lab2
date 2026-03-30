@@ -14,16 +14,24 @@ void SoPhuc::Xuat() {
 	cout << "So phuc: " << iThuc << " + " << iAo << "i";
 }
 
-SoPhuc SoPhuc::TinhTong(SoPhuc sp2) {
+SoPhuc SoPhuc::TinhTong(const SoPhuc& sp2) {
 	SoPhuc temp;
 	temp.iThuc = iThuc + sp2.iThuc;
 	temp.iAo = iAo + sp2.iAo;
 	return temp;
 }
 
-SoPhuc SoPhuc::TinhHieu(SoPhuc sp2) {
+SoPhuc SoPhuc::TinhHieu(const SoPhuc& sp2) {
 	SoPhuc temp;
 	temp.iThuc = iThuc - sp2.iThuc;
 	temp.iAo = iAo - sp2.iAo;
 	return temp;
 }
+
+SoPhuc SoPhuc::TinhTich(const SoPhuc& sp2) {
+
+};
+
+SoPhuc SoPhuc::TinhThuong(const SoPhuc& sp2) {
+
+};
