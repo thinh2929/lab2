@@ -1,2 +1,6 @@
 ﻿  baitap1.cpp
-  baitap1.vcxproj -> C:\Users\Anh Thinh\OneDrive\Documents\university\oop\Lab2\baitap1\x64\Debug\baitap1.exe
+  NgayThangNam.cpp
+  Generating Code...
+C:\Users\Anh Thinh\Documents\university\oop\lab2\baitap1\baitap1\NgayThangNam.cpp(39,1): warning C4715: 'isNgayHopLe': not all control paths return a value
+  LINK : C:\Users\Anh Thinh\Documents\university\oop\lab2\baitap1\x64\Debug\baitap1.exe not found or not built by the last incremental link; performing full link
+  baitap1.vcxproj -> C:\Users\Anh Thinh\Documents\university\oop\lab2\baitap1\x64\Debug\baitap1.exe

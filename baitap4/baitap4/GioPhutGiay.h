@@ -6,6 +6,6 @@ private:
 public:
 	void Nhap();
 	void Xuat();
+	bool thoiGianHopLe(int iGio, int iPhut, int iGiay);
 	void TinhCongThemMotGiay();
 };
-

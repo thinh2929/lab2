@@ -7,36 +7,37 @@ using namespace std;
 bool isNamNhuan(int nam) {
 	return (nam % 400 == 0) || (nam % 4 == 0 && nam % 100 != 0);
 }
-
+// Hàm kiểm tra một năm có hợp lệ không
+// input: 30 2 2026, output:false
 bool isNgayHopLe(int ngay, int thang, int nam) {
 	if (ngay < 1 || thang < 1 || nam < 1) return false;
 	switch (thang) {
-		case 1:
-		case 3:
-		case 5:
-		case 7:
-		case 8:
-		case 10:
-		case 12:
-			return ngay < 32;
-			break;
-		case 2:
-			if (isNamNhuan(nam)) {
-				return ngay < 30;
-			}
-			else {
-				return ngay < 29;
-			}
-			break;
-		case 4:
-		case 6:
-		case 9:
-		case 11:
-			return ngay < 31;
-			break;
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+		return ngay < 32;
+		break;
+	case 2:
+		if (isNamNhuan(nam)) {
+			return ngay < 30;
+		}
+		else {
+			return ngay < 29;
+		}
+		break;
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+		return ngay < 31;
+		break;
 	}
 }
-
+// Hàm nhập iNgay, iThang, iNam
 void NgayThangNam::Nhap() {
 	cout << "Nhap ngay: ";
 	cin >> iNgay;
@@ -50,14 +51,16 @@ void NgayThangNam::Nhap() {
 		Nhap();
 	}
 }
-
+// Hàm xuất iNgay, iThang, iNam
+// input: 10 4 2026, output: "Hom nay la ngay 10/4/2026
 void NgayThangNam::Xuat() {
 	cout << "Hom nay la ngay " << iNgay << "/" << iThang << "/" << iNam << '\n';
 }
-
+// Hàm xuất ngày tiếp theo
+// input: 10 4 2026, output: "Hom nay la ngay 11/4/2026
 void NgayThangNam::XuatNgayThangNamTiepTheo() {
 	int iNextNgay = iNgay + 1, iNextThang = iThang, iNextNam = iNam;
-	
+
 	if (!isNgayHopLe(iNextNgay, iNextThang, iNextNam)) {
 		iNextNgay = 1;
 		iNextThang++;
